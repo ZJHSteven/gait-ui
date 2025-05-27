@@ -22,11 +22,11 @@ import {
   Field, // V3 推荐的表单控制组件 [cite: 4116]
 } from '@chakra-ui/react';
 import { Link as RouterLink, useNavigate } from 'react-router-dom';
-import { LuPlus, LuPlay, LuSquare, LuView, LuTrash2 } from 'react-icons/lu'; // 示例图标
+import { LuPlus, LuPlay, LuSquare, LuView, LuX } from 'react-icons/lu';// 示例图标
 import type { SessionResponse, StartSessionPayload } from '../types'; // 确保路径正确
 
 // 从您的 Worker 获取API基础URL
-const API_BASE_URL = 'gait.worker.zjhstudio.com'; // 替换为您的Worker URL
+const API_BASE_URL = 'https://gait.worker.zjhstudio.com'; // 替换为您的Worker URL
 
 interface ExperimentSessionForUI extends SessionResponse {
   // 可以添加一些前端特有的辅助字段，如果需要

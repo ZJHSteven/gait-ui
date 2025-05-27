@@ -17,7 +17,7 @@ import {
 } from '@chakra-ui/react';
 import type { QueryDataResponse, GaitDataRecord } from '../types'; // 确保路径正确
 
-const API_BASE_URL = 'gait.worker.zjhstudio.com'; // 替换为您的Worker URL
+const API_BASE_URL = 'https://gait.worker.zjhstudio.com'; // 替换为您的Worker URL
 
 // GaitDataRecord 中 quaternions 是字符串，所以我们需要一个新类型给解析后的数据
 interface ParsedGaitDataRecord extends Omit<GaitDataRecord, 'quaternions'> {
